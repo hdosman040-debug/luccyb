@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Navbar } from "@/components/hotel/Navbar";
 import { Hero } from "@/components/hotel/Hero";
+import { ImageStrip } from "@/components/hotel/ImageStrip";
 import { BookingWidget } from "@/components/hotel/BookingWidget";
 import { RoomsSection } from "@/components/hotel/RoomsSection";
 import { ServicesSection } from "@/components/hotel/ServicesSection";
@@ -45,6 +46,7 @@ function Index() {
         <Navbar />
         <main>
           <Hero />
+          <ImageStrip />
           <BookingWidget />
           <RoomsSection />
           <ServicesSection />
