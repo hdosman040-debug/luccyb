@@ -22,7 +22,7 @@ export function Hero() {
       />
 
       {/* Editorial Vignette Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0F2A43]/80 via-[#0F2A43]/50 to-[#FAFAFA]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0F2A43]/80 via-[#0F2A43]/50 to-[#0a0a0a]" />
 
       <div className="container-lux relative z-10 flex flex-col items-center text-center text-white">
         {/* Luxury Eyebrow Text */}
@@ -78,7 +78,7 @@ export function Hero() {
         className="absolute bottom-12 left-1/2 z-10 -translate-x-1/2 text-[#C9A227]/80 transition-transform duration-300 hover:translate-y-1"
       >
         <span className="flex flex-col items-center gap-2">
-          <span className="text-[0.6rem] uppercase tracking-[0.3em] font-medium text-[#0F2A43]">Scroll</span>
+          <span className="text-[0.6rem] uppercase tracking-[0.3em] font-medium text-[#E2D6BC]/80">Scroll</span>
           <span className="block h-10 w-[1px] bg-gradient-to-b from-[#C9A227] to-transparent animate-[pulse_2s_infinite]" />
         </span>
       </button>
