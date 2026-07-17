@@ -46,6 +46,16 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
 export function useLanguage() {
   const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error("useLanguage must be used within LanguageProvider");
+  
+  // Guard fallback: If the context is missing temporarily during initialization or hot-reloading,
+  // return a safe fallback object instead of crashing the page.
+  if (!ctx) {
+    return {
+      lang: "en" as Lang,
+      setLang: () => {},
+      toggle: () => {},
+      t: translations["en"]
+    };
+  }
   return ctx;
 }

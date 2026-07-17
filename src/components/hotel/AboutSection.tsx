@@ -5,7 +5,7 @@ import { StatCounter } from "./StatCounter";
 
 export function AboutSection() {
   const { t } = useLanguage();
-  const aboutImg = "/images/lucy-hotel/views/building-day-view.jpg";
+  const aboutImg = "/hero/hero-background.jpg";
 
   // Dynamically query our custom stats configuration from hotel.ts
   const yearsStat = hotel.stats.find((s) => s.key === "years");
@@ -23,7 +23,7 @@ export function AboutSection() {
             
             <img
               src={aboutImg}
-              alt="Lucy Hotel grand exterior view"
+              alt="Time Hotel grand exterior view"
               loading="lazy"
               width={1200}
               height={900}

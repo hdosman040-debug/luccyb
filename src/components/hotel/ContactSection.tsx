@@ -99,7 +99,7 @@ export function ContactSection() {
             
             <div className="relative z-10 h-full min-h-72 overflow-hidden rounded-none border border-[#E2D6BC]/60 bg-white p-2 shadow-[0_15px_30px_rgba(15,42,67,0.06)]">
               <iframe
-                title="Lucy Hotel location — Dessie, Ethiopia"
+                title="Time Hotel location — Dessie, Ethiopia"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=39.60%2C11.10%2C39.68%2C11.16&layer=mapnik&marker=11.131%2C39.635"
                 className="h-full min-h-72 w-full rounded-none opacity-90 transition-opacity duration-300 hover:opacity-100"
                 loading="lazy"

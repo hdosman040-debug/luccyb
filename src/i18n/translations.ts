@@ -12,10 +12,10 @@ export const translations = {
       bookNow: "Book Now",
     },
     hero: {
-      welcome: "Welcome to Lucy Hotel",
+      welcome: "Welcome to Time Hotel",
       headline: "Experience Luxury, Comfort & Exceptional Hospitality",
       description:
-        "Discover elegant rooms, premium services, and unforgettable experiences at Lucy Hotel, Dessie.",
+        "Discover elegant rooms, premium services, and unforgettable experiences at Time Hotel, Dessie.",
       book: "Book Your Stay",
       explore: "Explore Rooms",
     },
@@ -36,6 +36,7 @@ export const translations = {
       subtitle: "Refined accommodation crafted for the discerning traveller.",
       guests: "Guests",
       from: "from",
+      currency: "ETB",
       night: "night",
       viewDetails: "View Details",
       amenities: "Amenities",
@@ -83,19 +84,17 @@ export const translations = {
       title: "Premium Services",
       subtitle: "Every detail considered for an effortless stay.",
       items: {
-        restaurant: { title: "Restaurant", desc: "Fine dining with local and international cuisine." },
-        wifi: { title: "Free WiFi", desc: "High-speed internet throughout the hotel." },
-        roomService: { title: "Room Service", desc: "24/7 in-room dining at your convenience." },
-        conference: { title: "Conference Facilities", desc: "Fully equipped halls for events and meetings." },
-        airport: { title: "Airport Transfer", desc: "Comfortable pick-up and drop-off service." },
-        parking: { title: "Parking", desc: "Secure on-site parking for all guests." },
+        wifi: { title: "Free WiFi", desc: "High-speed wireless internet access across all rooms and public spaces." },
+        parking: { title: "Free Parking", desc: "Complimentary, highly secure on-site parking for all our guests." },
+        restaurant: { title: "Restaurant", desc: "Delectable traditional Ethiopian cuisine and international dishes." },
+        kidFriendly: { title: "Kid-Friendly", desc: "A warm, family-friendly environment with safe spaces for children." },
       },
     },
     about: {
-      title: "The Lucy Hotel Story",
+      title: "The Time Hotel Story",
       subtitle: "A Legacy of Hospitality",
       body1:
-        "Nestled in the heart of Dessie, Lucy Hotel has redefined luxury hospitality in the region. We combine world-class comfort with the warmth of genuine Ethiopian tradition.",
+        "Nestled in the heart of Dessie, Time Hotel has redefined luxury hospitality in the region. We combine world-class comfort with the warmth of genuine Ethiopian tradition.",
       body2:
         "From our elegant rooms to our exceptional dining and personalised service, every experience is crafted to leave a lasting impression.",
       missionTitle: "Our Mission",
@@ -109,7 +108,7 @@ export const translations = {
     },
     gallery: {
       title: "Gallery",
-      subtitle: "A glimpse into the Lucy Hotel experience.",
+      subtitle: "A glimpse into the Time Hotel experience.",
       all: "All",
       categories: {
         rooms: "Rooms",
@@ -140,7 +139,7 @@ export const translations = {
       contact: "Contact",
       rights: "All rights reserved.",
     },
-    whatsappMsg: "Hello, I would like to reserve a room at Lucy Hotel.",
+    whatsappMsg: "Hello, I would like to reserve a room at Time Hotel.",
   },
   am: {
     nav: {
@@ -177,6 +176,8 @@ export const translations = {
       subtitle: "ለተመረጡ ተጓዦች የተዘጋጀ የተዋበ መኝታ።",
       guests: "እንግዶች",
       from: "ከ",
+      currency: "ብር",
+      currency: "ብር",
       night: "ሌሊት",
       viewDetails: "ዝርዝር ይመልከቱ",
       amenities: "አገልግሎቶች",
@@ -224,19 +225,17 @@ export const translations = {
       title: "ምርጥ አገልግሎቶች",
       subtitle: "ለቀላል ቆይታ እያንዳንዱ ዝርዝር ታስቦበታል።",
       items: {
-        restaurant: { title: "ሬስቶራንት", desc: "የአገር ውስጥ እና ዓለም አቀፍ ምግቦች።" },
-        wifi: { title: "ነፃ ዋይፋይ", desc: "በሆቴሉ ውስጥ ፈጣን ኢንተርኔት።" },
-        roomService: { title: "የክፍል አገልግሎት", desc: "24/7 በክፍልዎ ውስጥ ምግብ አገልግሎት።" },
-        conference: { title: "የስብሰባ አዳራሾች", desc: "ለዝግጅቶች እና ስብሰባዎች ሙሉ በሙሉ የተደራጁ አዳራሾች።" },
-        airport: { title: "የአውሮፕላን ማመላለሻ", desc: "ምቹ የመውሰድ እና የማድረስ አገልግሎት።" },
-        parking: { title: "መኪና ማቆሚያ", desc: "ለሁሉም እንግዶች ደህንነቱ የተጠበቀ ማቆሚያ።" },
+        wifi: { title: "ነፃ ዋይፋይ", desc: "በሆቴሉ ውስጥ ፈጣን አስተማማኝ ገመድ አልባ ኢንተርኔት።" },
+        parking: { title: "ነፃ መኪና ማቆሚያ", desc: "ለሁሉም እንግዶች ደህንነቱ የተጠበቀ ነፃ ማቆሚያ።" },
+        restaurant: { title: "ሬስቶራንት", desc: "የአገር ውስጥ እና ዓለም አቀፍ ምርጥ ምግቦች።" },
+        kidFriendly: { title: "ለልጆች ምቹ", desc: "ለቤተሰቦች እና ለልጆች ምቹ እና አስተማማኝ ሁኔታ።" },
       },
     },
     about: {
-      title: "የሉሲ ሆቴል ታሪክ",
+      title: "የታይም ሆቴል ታሪክ",
       subtitle: "የእንግዳ ተቀባይነት ውርስ",
       body1:
-        "በደሴ ልብ ውስጥ የሚገኘው ሉሲ ሆቴል በክልሉ የቅንጦት እንግዳ ተቀባይነትን እንደገና ገልጿል። ዓለም አቀፍ ምቾትን ከእውነተኛ የኢትዮጵያ ወግ ሙቀት ጋር እናዋህዳለን።",
+        "በደሴ ልብ ውስጥ የሚገኘው የታይም ሆቴል በክልሉ የቅንጦት እንግዳ ተቀባይነትን እንደገና ገልጿል። ዓለም አቀፍ ምቾትን ከእውነተኛ የኢትዮጵያ ወግ ሙቀት ጋር እናዋህዳለን።",
       body2:
         "ከተዋቡ ክፍሎቻችን እስከ ልዩ ምግባችን እና ግላዊ አገልግሎታችን ድረስ፣ እያንዳንዱ ተሞክሮ ዘላቂ ስሜት ለመፍጠር የተዘጋጀ ነው።",
       missionTitle: "ተልእኮአችን",
@@ -250,7 +249,7 @@ export const translations = {
     },
     gallery: {
       title: "ማዕከለ ስዕላት",
-      subtitle: "የሉሲ ሆቴል ተሞክሮ እይታ።",
+      subtitle: "የታይም ሆቴል ተሞክሮ እይታ።",
       all: "ሁሉም",
       categories: {
         rooms: "ክፍሎች",

@@ -39,33 +39,38 @@ export function BookingWidget({ defaultRoom }: { defaultRoom?: string }) {
     <Button
       variant="outline"
       className={cn(
-        "h-12 w-full justify-start rounded-none border-[#0F2A43]/10 bg-[#FAFAFA] text-left font-light transition-all duration-300 hover:border-[#C9A227]/40 hover:bg-[#FAFAFA]/50 focus-visible:ring-1 focus-visible:ring-[#C9A227]",
-        !value && "text-muted-foreground",
+        "h-12 w-full justify-start rounded-none border-white/10 bg-[#161616] text-left font-light transition-all duration-300 hover:border-[#C9A227]/40 hover:bg-[#202020] focus-visible:ring-1 focus-visible:ring-[#C9A227]",
+        !value && "text-gray-500",
       )}
     >
       <CalendarIcon className="mr-2 h-4 w-4 text-[#C9A227] shrink-0" />
-      <span className="text-sm tracking-wide text-[#0F2A43]">
+      <span className="truncate text-sm tracking-wide text-gray-200">
         {value ? format(value, "PP") : placeholder}
       </span>
     </Button>
   );
 
   return (
-    <section id="booking" className="relative z-20 -mt-24 px-4 sm:-mt-20">
+    <section id="booking" className="relative z-20 bg-[#0a0a0a] px-4 py-6 border-b border-white/5 sm:py-10">
       <div className="container-lux">
-        <div className="rounded-none border border-[#C9A227]/25 bg-white/95 p-6 shadow-[0_25px_50px_-12px_rgba(15,42,67,0.15)] backdrop-blur-md sm:p-8">
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-5">
+        <div className="rounded-none border border-[#C9A227]/20 bg-[#0d0d0d] p-5 shadow-xl sm:p-8">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-5 md:gap-5">
+            
             <Field label={t.booking.checkin}>
               <Popover>
                 <PopoverTrigger asChild>{dateBtn(checkIn, t.booking.checkin)}</PopoverTrigger>
-                <PopoverContent className="w-auto p-0 border-[#C9A227]/20" align="start">
+                <PopoverContent 
+                  className="w-[calc(100vw-3rem)] max-w-sm p-0 border-[#C9A227]/20 bg-[#0d0d0d] z-50 md:w-auto" 
+                  align="start"
+                  sideOffset={4}
+                >
                   <Calendar
                     mode="single"
                     selected={checkIn}
                     onSelect={setCheckIn}
                     disabled={(d) => d < new Date(new Date().setHours(0, 0, 0, 0))}
                     initialFocus
-                    className={cn("p-3 pointer-events-auto bg-white")}
+                    className="p-3 bg-[#0d0d0d] text-white"
                   />
                 </PopoverContent>
               </Popover>
@@ -74,14 +79,18 @@ export function BookingWidget({ defaultRoom }: { defaultRoom?: string }) {
             <Field label={t.booking.checkout}>
               <Popover>
                 <PopoverTrigger asChild>{dateBtn(checkOut, t.booking.checkout)}</PopoverTrigger>
-                <PopoverContent className="w-auto p-0 border-[#C9A227]/20" align="start">
+                <PopoverContent 
+                  className="w-[calc(100vw-3rem)] max-w-sm p-0 border-[#C9A227]/20 bg-[#0d0d0d] z-50 md:w-auto" 
+                  align="start"
+                  sideOffset={4}
+                >
                   <Calendar
                     mode="single"
                     selected={checkOut}
                     onSelect={setCheckOut}
                     disabled={(d) => d <= (checkIn ?? new Date())}
                     initialFocus
-                    className={cn("p-3 pointer-events-auto bg-white")}
+                    className="p-3 bg-[#0d0d0d] text-white"
                   />
                 </PopoverContent>
               </Popover>
@@ -89,12 +98,12 @@ export function BookingWidget({ defaultRoom }: { defaultRoom?: string }) {
 
             <Field label={t.booking.guests}>
               <Select value={guests} onValueChange={setGuests}>
-                <SelectTrigger className="h-12 rounded-none border-[#0F2A43]/10 bg-[#FAFAFA] text-sm tracking-wide text-[#0F2A43] focus:ring-1 focus:ring-[#C9A227] transition-colors hover:border-[#C9A227]/40">
+                <SelectTrigger className="h-12 rounded-none border-white/10 bg-[#161616] text-sm tracking-wide text-gray-200 focus:ring-1 focus:ring-[#C9A227] transition-colors hover:border-[#C9A227]/40">
                   <SelectValue />
                 </SelectTrigger>
-                <SelectContent className="border-[#C9A227]/20">
+                <SelectContent className="border-[#C9A227]/20 bg-[#0d0d0d] text-white z-50">
                   {[1, 2, 3, 4, 5, 6].map((n) => (
-                    <SelectItem key={n} value={String(n)} className="text-sm text-[#0F2A43] focus:bg-[#F3E9D2]/40 focus:text-[#0F2A43]">
+                    <SelectItem key={n} value={String(n)} className="text-sm text-gray-200 focus:bg-[#C9A227]/20 focus:text-white">
                       {n} {n === 1 ? t.booking.guest : t.booking.guestsLabel}
                     </SelectItem>
                   ))}
@@ -104,12 +113,12 @@ export function BookingWidget({ defaultRoom }: { defaultRoom?: string }) {
 
             <Field label={t.booking.room}>
               <Select value={room} onValueChange={setRoom}>
-                <SelectTrigger className="h-12 rounded-none border-[#0F2A43]/10 bg-[#FAFAFA] text-sm tracking-wide text-[#0F2A43] focus:ring-1 focus:ring-[#C9A227] transition-colors hover:border-[#C9A227]/40">
+                <SelectTrigger className="h-12 rounded-none border-white/10 bg-[#161616] text-sm tracking-wide text-gray-200 focus:ring-1 focus:ring-[#C9A227] transition-colors hover:border-[#C9A227]/40">
                   <SelectValue placeholder={t.booking.selectRoom} />
                 </SelectTrigger>
-                <SelectContent className="border-[#C9A227]/20">
+                <SelectContent className="border-[#C9A227]/20 bg-[#0d0d0d] text-white z-50">
                   {rooms.map((r) => (
-                    <SelectItem key={r.id} value={r.id} className="text-sm text-[#0F2A43] focus:bg-[#F3E9D2]/40 focus:text-[#0F2A43]">
+                    <SelectItem key={r.id} value={r.id} className="text-sm text-gray-200 focus:bg-[#C9A227]/20 focus:text-white">
                       {t.rooms.items[r.id as keyof typeof t.rooms.items].name}
                     </SelectItem>
                   ))}
@@ -117,14 +126,15 @@ export function BookingWidget({ defaultRoom }: { defaultRoom?: string }) {
               </Select>
             </Field>
 
-            <div className="flex items-end">
+            <div className="flex items-end pt-2 md:pt-0">
               <button
                 onClick={reserve}
-                className="h-12 w-full rounded-none bg-[#0F2A43] text-[0.75rem] font-bold uppercase tracking-[0.2em] text-[#F3E9D2] transition-all duration-300 hover:bg-[#C9A227] hover:text-[#0F2A43] shadow-md hover:shadow-lg"
+                className="h-12 w-full rounded-none bg-[#C9A227] text-[0.72rem] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-white hover:text-black shadow-md"
               >
                 {t.booking.reserve}
               </button>
             </div>
+
           </div>
         </div>
       </div>
@@ -134,8 +144,8 @@ export function BookingWidget({ defaultRoom }: { defaultRoom?: string }) {
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <div className="flex flex-col gap-2">
-      <label className="text-[0.65rem] font-semibold uppercase tracking-[0.15em] text-[#0F2A43]/60">
+    <div className="flex flex-col gap-1.5">
+      <label className="text-[0.62rem] font-semibold uppercase tracking-[0.15em] text-[#C9A227]/90 sm:text-[0.65rem]">
         {label}
       </label>
       {children}

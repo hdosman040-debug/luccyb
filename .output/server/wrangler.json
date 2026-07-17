@@ -1,11 +1,11 @@
 {
-  "compatibility_date": "2026-07-14",
+  "compatibility_date": "2026-07-17",
   "main": "index.mjs",
   "assets": {
     "binding": "ASSETS",
     "directory": "../public"
   },
-  "name": "tanstack-start-ts-luccyb",
+  "name": "hdosman040-debug-luccyb",
   "compatibility_flags": [
     "nodejs_compat"
   ],

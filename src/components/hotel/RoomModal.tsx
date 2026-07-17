@@ -62,7 +62,7 @@ export function RoomModal({ room, onClose }: { room: Room | null; onClose: () =>
             </span>
           </div>
           <p className="mt-1 text-gold">
-            {t.rooms.from} ${room.price} / {t.rooms.night}
+            {room.price.toLocaleString()} {t.rooms.currency} / {t.rooms.night}
           </p>
 
           <p className="mt-4 leading-relaxed text-muted-foreground">{info.long}</p>

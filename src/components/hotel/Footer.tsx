@@ -18,7 +18,7 @@ export function Footer() {
         {/* Brand Showcase Block */}
         <div className="flex flex-col items-start">
           <div className="font-serif text-2xl font-medium tracking-[0.18em] uppercase text-[#F3E9D2] leading-none">
-            LUCY <span className="text-[#C9A227] font-light">HOTEL</span>
+            TIME <span className="text-[#C9A227] font-light">HOTEL</span>
           </div>
           <span className="text-[0.55rem] uppercase tracking-[0.4em] text-[#F3E9D2]/50 mt-1.5 font-medium">
             Dessie · Ethiopia

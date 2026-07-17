@@ -17,7 +17,7 @@ export const rooms: Room[] = [
       "/images/lucy-hotel/rooms/room-standard-king.jpg"
     ],
     guests: 2,
-    price: 120,
+    price: 3500,
     amenityKeys: ["wifi", "breakfast", "ac", "tv"],
   },
   {
@@ -29,7 +29,7 @@ export const rooms: Room[] = [
       "/images/lucy-hotel/rooms/room-deluxe-queen.jpg"
     ],
     guests: 2,
-    price: 180,
+    price: 5500,
     amenityKeys: ["wifi", "breakfast", "ac", "tv", "workspace"],
   },
   {
@@ -41,7 +41,7 @@ export const rooms: Room[] = [
       "/images/lucy-hotel/rooms/room-executive-suite.jpg"
     ],
     guests: 3,
-    price: 240,
+    price: 7500,
     amenityKeys: ["wifi", "breakfast", "ac", "tv", "lounge", "minibar"],
   },
   {
@@ -52,7 +52,7 @@ export const rooms: Room[] = [
       "/images/lucy-hotel/rooms/room-standard-king.jpg"
     ],
     guests: 4,
-    price: 300,
+    price: 9500,
     amenityKeys: ["wifi", "breakfast", "ac", "tv", "lounge", "minibar"],
   },
   {
@@ -64,7 +64,7 @@ export const rooms: Room[] = [
       "/images/lucy-hotel/rooms/room-standard-king.jpg"
     ],
     guests: 4,
-    price: 550,
+    price: 16000,
     amenityKeys: ["wifi", "breakfast", "ac", "tv", "lounge", "minibar", "butler", "pool"],
   },
 ];

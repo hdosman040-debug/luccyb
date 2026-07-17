@@ -3,23 +3,23 @@ import React from "react";
 const stripImages = [
   {
     id: 1,
-    src: "/images/lucy-hotel/rooms/room-executive-suite.jpg",
+    src: "/rooms/room-executive-suite.jpg",
     title: "Executive Suite",
   },
   {
     id: 2,
-    src: "/images/lucy-hotel/rooms/room-deluxe-queen.jpg",
+    src: "/rooms/room-deluxe-queen.jpg",
     title: "Deluxe Queen",
   },
   {
     id: 3,
-    src: "/images/lucy-hotel/rooms/room-standard-king.jpg",
+    src: "/rooms/room-standard-king.jpg",
     title: "Standard King",
   },
   {
     id: 4,
-    src: "/images/lucy-hotel/building-day-view.jpg",
-    title: "Lucy Hotel Exterior",
+    src: "/exterior-building/building-exterior.jpg",
+    title: "Time Hotel Exterior",
   },
 ];
 

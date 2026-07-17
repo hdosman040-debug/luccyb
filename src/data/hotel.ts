@@ -1,10 +1,12 @@
-export const hotel = {
-  name: "Lucy Hotel",
+import { HotelConfig } from '../types/hotel';
+
+export const hotel: HotelConfig = {
+  name: "Time Hotel",
   tagline: "Boutique Luxury & Heritage in Dessie",
-  phone: "+251961614444",
-  phoneDisplay: "+251 96 161 4444",
+  phone: "+251914313458",
+  phoneDisplay: "+251 91 431 3458",
   email: "hdosman040@gmail.com",
-  whatsapp: "251961614444",
+  whatsapp: "251914313458",
   address: "Dessie, Ethiopia",
   coordinates: {
     lat: 11.144065,
@@ -14,8 +16,8 @@ export const hotel = {
   social: {
     facebook: "https://facebook.com",
     instagram: "https://instagram.com",
-    telegram: "https://t.me", // Custom tailored for Ethiopian local reach
-    twitter: "https://twitter.com", // Added to satisfy TS compilation
+    telegram: "https://t.me",
+    twitter: "https://twitter.com",
   },
   stats: [
     { value: 10, suffix: "+", key: "years" },

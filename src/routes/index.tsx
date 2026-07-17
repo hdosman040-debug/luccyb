@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { ThemeProvider } from "@/context/ThemeContext";
 import { Navbar } from "@/components/hotel/Navbar";
 import { Hero } from "@/components/hotel/Hero";
-import { ImageStrip } from "@/components/hotel/ImageStrip";
 import { BookingWidget } from "@/components/hotel/BookingWidget";
+import { ImageStrip } from "@/components/hotel/ImageStrip";
 import { RoomsSection } from "@/components/hotel/RoomsSection";
 import { ServicesSection } from "@/components/hotel/ServicesSection";
 import { AboutSection } from "@/components/hotel/AboutSection";
@@ -20,15 +21,15 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Hotel",
-          name: "Lucy Hotel",
+          name: "Time Hotel",
           description:
-            "Luxury 5-star boutique hotel in Dessie, Ethiopia offering elegant rooms, fine dining and exceptional hospitality.",
+            "Luxury 5-star boutique hotel in Dessie, Ethiopia offering elegant rooms, fine dining, and exceptional hospitality.",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Dessie",
             addressCountry: "ET",
           },
-          telephone: "+251967423048",
+          telephone: "+251914313458",
           email: "hdosman040@gmail.com",
           starRating: { "@type": "Rating", ratingValue: "5" },
           priceRange: "$$$",
@@ -41,22 +42,24 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <LanguageProvider>
-      <div className="overflow-x-hidden bg-background">
-        <Navbar />
-        <main>
-          <Hero />
-          <ImageStrip />
-          <BookingWidget />
-          <RoomsSection />
-          <ServicesSection />
-          <AboutSection />
-          <GallerySection />
-          <Testimonials />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <div className="overflow-x-hidden bg-background text-foreground transition-colors duration-500">
+          <Navbar />
+          <main>
+            <Hero />
+            <BookingWidget />
+            <ImageStrip />
+            <RoomsSection />
+            <ServicesSection />
+            <AboutSection />
+            <GallerySection />
+            <Testimonials />
+            <ContactSection />
+          </main>
+          <Footer />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
