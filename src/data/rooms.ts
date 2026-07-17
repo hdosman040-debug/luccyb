@@ -10,11 +10,11 @@ export type Room = {
 export const rooms: Room[] = [
   {
     id: "deluxe",
-    image: "/images/lucy-hotel/rooms/room-deluxe-queen.jpg",
+    image: "/images/lucy-hotel/rooms/room-deluxe-queen.webp",
     gallery: [
-      "/images/lucy-hotel/rooms/room-deluxe-queen.jpg",
-      "/images/lucy-hotel/rooms/room-executive-suite.jpg",
-      "/images/lucy-hotel/rooms/room-standard-king.jpg"
+      "/images/lucy-hotel/rooms/room-deluxe-queen.webp",
+      "/images/lucy-hotel/rooms/room-executive-suite.webp",
+      "/images/lucy-hotel/rooms/room-standard-king.webp"
     ],
     guests: 2,
     price: 3500,
@@ -22,11 +22,11 @@ export const rooms: Room[] = [
   },
   {
     id: "executive",
-    image: "/images/lucy-hotel/rooms/room-executive-suite.jpg",
+    image: "/images/lucy-hotel/rooms/room-executive-suite.webp",
     gallery: [
-      "/images/lucy-hotel/rooms/room-executive-suite.jpg",
-      "/images/lucy-hotel/rooms/room-standard-king.jpg",
-      "/images/lucy-hotel/rooms/room-deluxe-queen.jpg"
+      "/images/lucy-hotel/rooms/room-executive-suite.webp",
+      "/images/lucy-hotel/rooms/room-standard-king.webp",
+      "/images/lucy-hotel/rooms/room-deluxe-queen.webp"
     ],
     guests: 2,
     price: 5500,
@@ -34,11 +34,11 @@ export const rooms: Room[] = [
   },
   {
     id: "junior",
-    image: "/images/lucy-hotel/rooms/room-standard-king.jpg",
+    image: "/images/lucy-hotel/rooms/room-standard-king.webp",
     gallery: [
-      "/images/lucy-hotel/rooms/room-standard-king.jpg",
-      "/images/lucy-hotel/rooms/room-deluxe-queen.jpg",
-      "/images/lucy-hotel/rooms/room-executive-suite.jpg"
+      "/images/lucy-hotel/rooms/room-standard-king.webp",
+      "/images/lucy-hotel/rooms/room-deluxe-queen.webp",
+      "/images/lucy-hotel/rooms/room-executive-suite.webp"
     ],
     guests: 3,
     price: 7500,
@@ -46,10 +46,10 @@ export const rooms: Room[] = [
   },
   {
     id: "family",
-    image: "/images/lucy-hotel/rooms/room-deluxe-queen.jpg", // Reusing your luxury room layouts elegantly
+    image: "/images/lucy-hotel/rooms/room-deluxe-queen.webp", // Reusing your luxury room layouts elegantly
     gallery: [
-      "/images/lucy-hotel/rooms/room-deluxe-queen.jpg",
-      "/images/lucy-hotel/rooms/room-standard-king.jpg"
+      "/images/lucy-hotel/rooms/room-deluxe-queen.webp",
+      "/images/lucy-hotel/rooms/room-standard-king.webp"
     ],
     guests: 4,
     price: 9500,
@@ -57,11 +57,11 @@ export const rooms: Room[] = [
   },
   {
     id: "presidential",
-    image: "/images/lucy-hotel/rooms/room-executive-suite.jpg",
+    image: "/images/lucy-hotel/rooms/room-executive-suite.webp",
     gallery: [
-      "/images/lucy-hotel/rooms/room-executive-suite.jpg",
-      "/images/lucy-hotel/rooms/room-deluxe-queen.jpg",
-      "/images/lucy-hotel/rooms/room-standard-king.jpg"
+      "/images/lucy-hotel/rooms/room-executive-suite.webp",
+      "/images/lucy-hotel/rooms/room-deluxe-queen.webp",
+      "/images/lucy-hotel/rooms/room-standard-king.webp"
     ],
     guests: 4,
     price: 16000,
