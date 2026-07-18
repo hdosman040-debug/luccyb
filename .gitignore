@@ -4,3 +4,6 @@ dist/
 .env
 .env.*
 .DS_Store
+
+luccyb-backup/
+src-backup-before-webp/
